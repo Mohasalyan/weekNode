@@ -1,13 +1,13 @@
 //@desc Get all contacts
 //@route GET /api/contacts
-//@access puplic
+//@access public
 const getContacts = (req, res) => {
     res.status(200).json({ message: "get all contact" });
   };
   
   //@desc Create all contacts
-  //@route Post /api/contacts
-  //@access puplic
+  //@route bost /api/contacts
+  //@access public
   const createContact = (req, res) => {
     const { name, email, phone } = req.body;
     if (!name || !email || !phone) {
